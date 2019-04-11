@@ -1,0 +1,136 @@
+body{
+    color: #202020;
+}
+.container{
+    margin-left: auto;
+    margin-right:auto;
+    width:80%;
+}
+.title{
+    position:relative;
+    margin-left: auto;
+    margin-right:auto;
+    width:80%;
+    z-index:-1;
+}
+.content{
+    margin:5%;
+}
+img{
+    max-width: 100%;
+}
+h3{
+    font-family:'Staatliches', cursive;
+
+    font-weight:bolder;
+    text-align:center;
+}
+h4{
+    font-family: sans-serif;
+    font-weight: normal;
+    /* text-align:center; */
+}
+#nav{
+    padding: 10px;
+    list-style-type:none;
+    border:solid 2px ;
+    text-align:center;
+}
+#nav li{
+    display:inline;
+}
+p, .persona{
+    font-family: sans-serif;
+    font-weight:lighter;
+}
+#persona1, #persona2{
+    text-align:left;
+    float:left;
+}
+footer{
+    font-family: 'Courier New', Courier, monospace;
+    text-align:center;
+}
+#intro  {
+    text-align:center;
+}
+.itemVertical{
+display:flex;
+flex-direction:column;
+max-width:50%;
+}
+.colors{
+}
+.itemHorizontal{
+    display:flex;
+    flex-direction:row;
+    margin: auto;
+    width: 100%;    
+}
+.wrapper{
+display:flex;
+flex-direction:row;
+justify-content: space-between;
+}
+.wrapper2{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    }
+
+@media screen and (max-width: 321px) {
+    .itemHorizontal{
+        display:flex;
+        flex-direction:column;
+        margin: auto;
+        width: 100%;    
+    }
+    .wrapper2{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+    }
+    .wrapper{
+            display:flex;
+            flex-direction:column;
+            justify-content: space-between;
+    }
+    .itemVertical{
+                display:flex;
+                flex-direction:column;
+                max-width:100%;
+                align-items: center;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .itemHorizontal{
+        display:flex;
+        flex-direction:row;
+        margin: auto;
+        width: 100%;    
+    }
+    .wrapper2{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+    }
+    .wrapper{
+            display:row;
+            flex-direction:column;
+            justify-content: space-between;
+    }
+    .itemVertical{
+        display:flex;
+        flex-direction:column;
+        max-width:50%;
+        }
+}
+
+@media only screen and (min-width: 2000px){
+    .container{
+        margin-left: auto;
+        margin-right:auto;
+        width:65%;
+    }
+}
